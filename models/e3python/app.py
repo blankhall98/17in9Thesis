@@ -34,13 +34,14 @@ def main():
 
     # SUSTAINABLE DEVELOPMENT GOALS VS GROSS DOMESTIC PRODUCT
     # graph correlation between sdg and gdp
-    '''
-    e3.graph_sdgXgdp('1')
-    e3.graph_sdgXgdp('1',corr=True)
+    
+    """
+    e3.graph_sdgXgdp('2')
+    e3.graph_sdgXgdp('2',corr=True)
     e3.graph_regional_sdgXgdp('ASoS','1')
     e3.graph_regional_sdgXgdp('ASoS','1',corr = True)
-    '''
-
+    """
+    e3.graph_sdgXgdp('6')
     #fit goals
     '''
     e3.correlate()

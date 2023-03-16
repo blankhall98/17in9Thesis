@@ -107,7 +107,7 @@ class Inputs:
                     'green-yellow': 7,
                     'yellow-red': 15,
                     'direction of progress': '<',
-                    'fit': lambda x,a,b : a*np.exp(-x/b)
+                    'fit': lambda x,b : 2.5 + 32.5*np.exp(-x/b)
                 },
                 
                 '3': {
@@ -117,7 +117,7 @@ class Inputs:
                     'green-yellow': 75,
                     'yellow-red': 70,
                     'direction of progress': '>',
-                    'fit': lambda x,a,b : a*np.exp(x/b)
+                    'fit': lambda x,t,a,b : (70+0.18*(1965-t*x))*(1-a*np.exp(-x/b))
                 },
                 
                 '4': {
@@ -127,7 +127,7 @@ class Inputs:
                     'green-yellow': 12,
                     'yellow-red': 10,
                     'direction of progress': '>',
-                    'fit': lambda x,a,b : a*np.exp(x/b)
+                    'fit': lambda x,a : 18 - 12*np.exp(-x/a)
                 },
                 
                 '5': {
@@ -137,7 +137,7 @@ class Inputs:
                     'green-yellow': 0.95,
                     'yellow-red': 0.8,
                     'direction of progress': '>',
-                    'fit': lambda x,a,b : a*np.exp(x/b)
+                    'fit': lambda x,a : 1.1 - 0.4*np.exp(-x/a)
                 },
                 
                 '6': {
@@ -147,7 +147,7 @@ class Inputs:
                     'green-yellow': 98,
                     'yellow-red': 80,
                     'direction of progress': '>',
-                    'fit': lambda x,a,b : a*np.exp(x/b)
+                    'fit': lambda x,a,b : 100 - a*np.exp(-x/b)
                 },
                 
                 '7': {
@@ -157,7 +157,7 @@ class Inputs:
                     'green-yellow': 98,
                     'yellow-red': 80,
                     'direction of progress': '>',
-                    'fit': lambda x,a,b : a*np.exp(x/b)
+                    'fit': lambda x,a,b : 100 - a*np.exp(-x/b)
                 },
                 
                 '8': {
